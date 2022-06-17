@@ -4,7 +4,6 @@
   border-top: 0;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -21,7 +20,7 @@
 .footer div:nth-child(1) div:nth-child(2) {
   display: flex;
   margin-right: 5px;
-  margin-left: 5px;
+  margin-left: 25px;
 }
 
 .footer div:nth-child(1) div:nth-child(1) {
@@ -30,8 +29,8 @@
 }
 
 .footer svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 .footer button {
@@ -42,25 +41,3 @@
   font-size: 14px;
   border: 1px solid rgb(91, 195, 31);
 }
-
-/* .footer div:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 10px;
-  align-items: center;
-  height: 60px;
-}
-
-.footer div:nth-child(1) div:nth-child(1) {
-  color: rgb(107, 105, 105);
-  font-size: 14px;
-}
-
-.footer button {
-  background-color: rgb(91, 195, 31);
-  color: #fff;
-  border: 1px solid rgb(91, 195, 31);
-  padding: 5px 20px;
-  border-radius: 3px;
-  font-size: 14px;
-} */

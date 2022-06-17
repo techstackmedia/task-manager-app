@@ -8,7 +8,7 @@
 }
 
 .body div:nth-child(1) {
-  height: 220px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
