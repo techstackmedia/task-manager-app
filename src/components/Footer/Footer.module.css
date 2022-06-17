@@ -1,0 +1,30 @@
+.footer {
+  background-color: rgba(6, 182, 246, 0.1);
+  border: 1px solid #eeeded;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 3px;
+}
+
+.footer div:nth-child(1) {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  align-items: center;
+  height: 60px;
+}
+
+.footer div:nth-child(1) div:nth-child(1) {
+  color: rgb(107, 105, 105);
+  font-size: 14px;
+}
+
+.footer button {
+  background-color: rgb(91, 195, 31);
+  color: #fff;
+  border: 1px solid rgb(91, 195, 31);
+  padding: 5px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+}
