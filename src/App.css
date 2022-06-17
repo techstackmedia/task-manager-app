@@ -1,3 +1,12 @@
 .App {
-  width: 530px;
+  position: relative;
+}
+
+.App::after {
+  position: absolute;
+  content: '2022 Task App - Bello Osagie';
+  font-size: 13px;
+  bottom: -40px;
+  transform: translate(47%);
+  color: #ccc
 }
