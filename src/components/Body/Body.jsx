@@ -1,7 +1,13 @@
+import { useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import body from './Body.module.css';
 
 const Body = () => {
+  const [text, setText] = useState('');
+
+  const handleTextChange = (e) => {
+    setText(e.target.value);
+  };
   return (
     <section className={body.body}>
       <div>
@@ -9,7 +15,13 @@ const Body = () => {
           <div>Task Description</div>
           <div>
             <MdKeyboardArrowDown />
-            <input type="text" name="" id="" />
+            <input
+              type="text"
+              name=""
+              id=""
+              value={text}
+              onChange={handleTextChange}
+            />
           </div>
         </div>
         <div>

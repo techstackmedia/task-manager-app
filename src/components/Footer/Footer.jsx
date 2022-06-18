@@ -1,12 +1,12 @@
 import { MdDelete } from 'react-icons/md';
 import footer from './Footer.module.css';
 
-const Footer = () => {
+const Footer = ({ handleTaskDelete }) => {
   return (
     <footer className={footer.footer}>
       <div>
         <div>
-          <MdDelete />
+          <MdDelete onClick={handleTaskDelete} />
         </div>
         <div>
           <div>Cancel</div>

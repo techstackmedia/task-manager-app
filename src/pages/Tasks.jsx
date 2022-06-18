@@ -17,6 +17,10 @@ const Tasks = ({ task }) => {
     });
   };
 
+  const handleClickDelete = () => {
+    console.log('Hello');
+  };
+
   const outcome = task.map((item) => {
     return (
       <div key={item.time} style={{ marginTop: 10 }}>
@@ -29,7 +33,7 @@ const Tasks = ({ task }) => {
   const elem = show ? (
     <div>
       <Body />
-      <Footer />
+      <Footer handleTaskDelete={handleClickDelete} />
     </div>
   ) : (
     <div style={{ marginTop: '20px' }}>{outcome}</div>
