@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <div>Cancel</div>
           <div>
-            <button>Save</button>
+            <button type="submit">Save</button>
           </div>
         </div>
       </div>

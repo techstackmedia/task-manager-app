@@ -8,6 +8,7 @@
   border-radius: 3px 3px 0 0;
   padding: 20px 10px;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .header nav div:nth-child(1) {

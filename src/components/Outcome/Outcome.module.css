@@ -1,0 +1,103 @@
+.outcome {
+  border-left: 2px solid rgb(220, 220, 80);
+  border-right: 1px solid #eeeded;
+  border-bottom: 1px solid #eeeded;
+  padding: 10px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-size: 14px;
+  color: rgb(107, 105, 105);
+}
+
+.outcome div:nth-child(1) div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.person {
+  display: flex;
+  height: auto;
+  align-items: center;
+  font-size: 13px;
+  color: rgb(107, 105, 105);
+}
+
+.edit {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  border-radius: 3px;
+  align-items: center;
+  height: 31.5px;
+  align-items: center;
+}
+
+.editButton svg {
+  height: 24px;
+  width: 24px;
+  border: 0.3px solid #eeeded;
+  border-radius: 3px;
+  border-right: 1px solid #eeeded;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.menuButton svg {
+  width: 24px;
+  height: 24px;
+  border-top: 0;
+  border-bottom: 0;
+  border: 1px solid #eeeded;
+  border-radius: 3px;
+  border-left: 0 solid #eeeded;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-top: -7px;
+}
+
+.outcome img {
+  border-radius: 2px;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.icons {
+  display: flex;
+  border: 1px solid #eeeded;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat {
+  margin: 0 5px;
+}
+
+.icons svg {
+  width: 20px;
+  height: 20px;
+}
+
+.chat {
+  border: none;
+}
