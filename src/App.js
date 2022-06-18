@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Tasks task={task} />
+        <Tasks task={task} total={task.length} />
       </div>
     </>
   );

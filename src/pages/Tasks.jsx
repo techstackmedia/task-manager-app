@@ -4,7 +4,7 @@ import Body from '../components/Body/Body';
 import Footer from '../components/Footer/Footer';
 import Outcome from '../components/Outcome/Outcome';
 
-const Tasks = ({ task }) => {
+const Tasks = ({ task, total }) => {
   const [show, setShow] = useState(true);
   const [text, setText] = useState('');
 
@@ -18,14 +18,12 @@ const Tasks = ({ task }) => {
     });
   };
 
-  const handleClickDelete = () => {
-    console.log('Hello');
-  };
+  const handleClickDelete = () => {};
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setText(text);
+    setText('');
   };
 
   const outcome = task.map((item) => {
@@ -52,7 +50,7 @@ const Tasks = ({ task }) => {
 
   return (
     <>
-      <Header handleTaskClick={handleClick} />
+      <Header total={total} handleTaskClick={handleClick} />
       {elem}
     </>
   );
