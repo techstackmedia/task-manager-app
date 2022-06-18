@@ -1,13 +1,13 @@
 import { MdAdd } from 'react-icons/md';
 import header from './Header.module.css';
 
-const Header = ({ handleTaskClick, text }) => {
+const Header = ({ handleTaskClick, text, id }) => {
   return (
     <header className={header.header}>
       <nav>
         <div>
           <div>{text}</div>
-          <div>0</div>
+          <div>{id}</div>
         </div>
         <div>
           <div>

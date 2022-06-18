@@ -1,11 +1,14 @@
 import Tasks from './pages/Tasks';
+import taskFeedback from './mocks/taskFeedback';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [task, setTask] = useState(taskFeedback);
   return (
     <>
       <div className="App">
-        <Tasks />
+        <Tasks task={task} />
       </div>
     </>
   );

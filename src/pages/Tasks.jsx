@@ -4,8 +4,12 @@ import Body from '../components/Body/Body';
 import Footer from '../components/Footer/Footer';
 import Outcome from '../components/Outcome/Outcome';
 
-const Tasks = () => {
-  const [show, setShow] = useState(false);
+const Tasks = ({ task }) => {
+  const [show, setShow] = useState(true);
+
+  if (!task || task.length === 0) {
+    return <p>No List Yet</p>;
+  }
 
   const handleClick = () => {
     setShow((prev) => {
@@ -13,22 +17,22 @@ const Tasks = () => {
     });
   };
 
-  const toggleBodyFooterStyle = {
-    display: show ? 'block' : 'none',
-  };
+  const outcome = task.map((item) => {
+    return (
+      <div key={item.time} style={{ marginTop: 10 }}>
+        <Header text={item.text} id={item.id} />
+        <Outcome name={item.name} description={item.description} />
+      </div>
+    );
+  });
 
   const elem = show ? (
-    <>
-      <div style={toggleBodyFooterStyle}>
-        <Body />
-        <Footer />
-      </div>
-    </>
-  ) : (
-    <div style={{ marginTop: '20px' }}>
-      <Header text="opportunities" />
-      <Outcome />
+    <div>
+      <Body />
+      <Footer />
     </div>
+  ) : (
+    <div style={{ marginTop: '20px' }}>{outcome}</div>
   );
 
   return (
