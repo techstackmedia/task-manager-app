@@ -6,6 +6,7 @@ import Outcome from '../components/Outcome/Outcome';
 
 const Tasks = ({ task }) => {
   const [show, setShow] = useState(true);
+  const [text, setText] = useState('');
 
   if (!task || task.length === 0) {
     return <p>No List Yet</p>;
@@ -21,6 +22,12 @@ const Tasks = ({ task }) => {
     console.log('Hello');
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setText(text);
+  };
+
   const outcome = task.map((item) => {
     return (
       <div key={item.time} style={{ marginTop: 10 }}>
@@ -33,7 +40,11 @@ const Tasks = ({ task }) => {
   const elem = show ? (
     <div>
       <Body />
-      <Footer handleTaskDelete={handleClickDelete} />
+      <Footer
+        handleTaskDelete={handleClickDelete}
+        handleSubmit={handleSubmit}
+        value={text}
+      />
     </div>
   ) : (
     <div style={{ marginTop: '20px' }}>{outcome}</div>

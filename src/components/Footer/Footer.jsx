@@ -1,7 +1,7 @@
 import { MdDelete } from 'react-icons/md';
 import footer from './Footer.module.css';
 
-const Footer = ({ handleTaskDelete }) => {
+const Footer = ({ handleTaskDelete, handleSubmit }) => {
   return (
     <footer className={footer.footer}>
       <div>
@@ -11,7 +11,9 @@ const Footer = ({ handleTaskDelete }) => {
         <div>
           <div>Cancel</div>
           <div>
-            <button type="submit">Save</button>
+            <button onClick={handleSubmit} type="submit">
+              Save
+            </button>
           </div>
         </div>
       </div>

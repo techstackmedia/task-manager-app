@@ -4,7 +4,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [task, setTask] = useState(taskFeedback);
+  const [task] = useState(taskFeedback);
   return (
     <>
       <div className="App">
